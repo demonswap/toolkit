@@ -2,7 +2,7 @@
  * @see https://github.com/demonswap/demon-frontend/blob/develop/src/config/constants/tokens.ts
  */
 const tokens = {
-  cake: {
+  demon: {
     symbol: "DEMON",
     address: {
       56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",

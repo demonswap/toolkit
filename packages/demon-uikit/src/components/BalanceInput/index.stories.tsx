@@ -59,9 +59,9 @@ export const Default: React.FC = () => {
 
 export const UnitDisplay: React.FC = () => {
   const DEMON_PRICE = 69;
-  const [cakeValue, setCakeValue] = useState("1006.086956");
+  const [demonValue, setDemonValue] = useState("1006.086956");
 
-  const cakeToUSD = (input: string) => {
+  const demonToUSD = (input: string) => {
     const convertedToUSD = parseFloat(input) * DEMON_PRICE;
     return `~${convertedToUSD.toLocaleString(undefined, {
       minimumFractionDigits: 2,
@@ -69,17 +69,17 @@ export const UnitDisplay: React.FC = () => {
     })} USD`;
   };
 
-  const handleCakeChange = (input: string) => {
-    setCakeValue(input);
+  const handleDemonChange = (input: string) => {
+    setDemonValue(input);
   };
 
   return (
     <>
       <Box width="300px" mb="24px">
         <BalanceInput
-          onUserInput={handleCakeChange}
-          value={cakeValue}
-          currencyValue={cakeToUSD(cakeValue)}
+          onUserInput={handleDemonChange}
+          value={demonValue}
+          currencyValue={demonToUSD(demonValue)}
           placeholder="0.0"
           unit="DEMON"
         />
@@ -87,8 +87,8 @@ export const UnitDisplay: React.FC = () => {
       {/* Long token names with spaces */}
       <Box width="300px">
         <BalanceInput
-          onUserInput={handleCakeChange}
-          value={cakeValue}
+          onUserInput={handleDemonChange}
+          value={demonValue}
           currencyValue="2854.66 BADGER-HOTCROSS LP"
           placeholder="0.0"
           unit="DEMON-BNB LP"
@@ -126,7 +126,7 @@ export const SiwtchUnits: React.FC = () => {
     setEditingUnit(editingUnitAfterChange);
   };
 
-  const handleCakeChange = (input: string) => {
+  const handleDemonChange = (input: string) => {
     const inputAsFloat = parseFloat(input);
     if (editingUnit === "DEMON") {
       setValues({
@@ -144,7 +144,7 @@ export const SiwtchUnits: React.FC = () => {
   return (
     <Box width="300px">
       <BalanceInput
-        onUserInput={handleCakeChange}
+        onUserInput={handleDemonChange}
         value={values[editingUnit]}
         currencyValue={`~${currencyValue} ${conversionUnit}`}
         placeholder="0.0"

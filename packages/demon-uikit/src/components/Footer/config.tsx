@@ -19,7 +19,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "DEMON",
-        href: "https://docs.demonswap.fi/tokenomics/cake",
+        href: "https://docs.demonswap.fi/tokenomics/demon",
       },
       {
         label: "—",

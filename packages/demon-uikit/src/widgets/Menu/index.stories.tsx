@@ -85,7 +85,7 @@ const defaultProps = {
   langs,
   setLang: noop,
   currentLang: "EN",
-  cakePriceUsd: 0.023158668932877668,
+  demonPriceUsd: 0.023158668932877668,
   links,
   subLinks: links[0].items,
   footerLinks,
@@ -94,7 +94,7 @@ const defaultProps = {
   globalMenu: <GlobalMenuComponent />,
   activeItem: "/swap",
   activeSubItem: "https://exchange.demonswap.fi",
-  buyCakeLabel: "Buy DEMON",
+  buyDemonLabel: "Buy DEMON",
 };
 
 const ConnectedTemplate: React.FC<NavProps> = (args) => {
@@ -187,7 +187,7 @@ export const WithSubmenuSelected: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        demonPriceUsd={0.23158668932877668}
         links={links}
         subLinks={subLinks}
         footerLinks={footerLinks}

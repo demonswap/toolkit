@@ -7,7 +7,7 @@ import { Colors } from "../../theme";
 
 interface Props {
   color?: keyof Colors;
-  cakePriceUsd?: number;
+  demonPriceUsd?: number;
 }
 
 const PriceLink = styled.a`
@@ -23,18 +23,18 @@ const PriceLink = styled.a`
   }
 `;
 
-const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
-  return cakePriceUsd ? (
+const DemonPrice: React.FC<Props> = ({ demonPriceUsd, color = "textSubtle" }) => {
+  return demonPriceUsd ? (
     <PriceLink
       href="https://demonswap.fi/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
       target="_blank"
     >
       <DemonRoundIcon width="24px" mr="8px" />
-      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color={color} bold>{`$${demonPriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
   );
 };
 
-export default React.memo(CakePrice);
+export default React.memo(DemonPrice);
