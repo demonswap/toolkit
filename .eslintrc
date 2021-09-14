@@ -1,5 +1,5 @@
 {
-  "extends": "@demonswap/eslint-config-pancake",
+  "extends": "@demonswap/eslint-config-demon",
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",

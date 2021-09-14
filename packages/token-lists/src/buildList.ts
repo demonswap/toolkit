@@ -25,7 +25,7 @@ type Version = {
 const lists = {
   "demonswap-default": {
     list: demonswapDefault,
-    name: "PancakeSwap Default",
+    name: "DemonSwap Default",
     keywords: ["demonswap", "default"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
@@ -34,7 +34,7 @@ const lists = {
   },
   "demonswap-extended": {
     list: demonswapExtended,
-    name: "PancakeSwap Extended",
+    name: "DemonSwap Extended",
     keywords: ["demonswap", "extended"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
@@ -43,7 +43,7 @@ const lists = {
   },
   "demonswap-top-100": {
     list: demonswapTop100,
-    name: "PancakeSwap Top 100",
+    name: "DemonSwap Top 100",
     keywords: ["demonswap", "top 100"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
@@ -52,7 +52,7 @@ const lists = {
   },
   "demonswap-top-15": {
     list: demonswapTop15,
-    name: "PancakeSwap Top 15",
+    name: "DemonSwap Top 15",
     keywords: ["demonswap", "top 15"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
@@ -87,9 +87,9 @@ export const buildList = (listName: string, versionBump?: VersionBump): TokenLis
     tokens: sort
       ? list.sort((t1, t2) => {
           if (t1.chainId === t2.chainId) {
-            // CAKE first in extended list
-            if ((t1.symbol === "CAKE") !== (t2.symbol === "CAKE")) {
-              return t1.symbol === "CAKE" ? -1 : 1;
+            // DEMON first in extended list
+            if ((t1.symbol === "DEMON") !== (t2.symbol === "DEMON")) {
+              return t1.symbol === "DEMON" ? -1 : 1;
             }
             return t1.symbol.toLowerCase() < t2.symbol.toLowerCase() ? -1 : 1;
           }

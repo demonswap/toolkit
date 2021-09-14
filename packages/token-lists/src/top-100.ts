@@ -25,7 +25,7 @@ interface BitqueryEntity {
 const blacklist: string[] = [
   // List of default tokens to exclude
   "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", // WBNB
-  "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", // CAKE
+  "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", // DEMON
   "0xe9e7cea3dedca5984780bafc599bd69add087d56", // BUSD
   "0x55d398326f99059fF775485246999027B3197955", // USDT
   "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c", // BTCB
@@ -60,7 +60,7 @@ const getDateRange = (): string[] => {
 };
 
 /**
- * Fetch Top100 Tokens traded on PancakeSwap v2, ordered by trading volume,
+ * Fetch Top100 Tokens traded on DemonSwap v2, ordered by trading volume,
  * for the past 30 days, filtered to remove default / broken tokens.
  *
  * @returns BitqueryEntity[]]
@@ -76,7 +76,7 @@ const getTokens = async (): Promise<BitqueryEntity[]> => {
           ethereum(network: bsc) {
             dexTrades(
               options: { desc: "Total_USD", limit: 100 }
-              exchangeName: { is: "Pancake v2" }
+              exchangeName: { is: "Demon v2" }
               baseCurrency: { notIn: $blacklist }
               date: { since: $from, till: $till }
             ) {
@@ -113,7 +113,7 @@ const getTokens = async (): Promise<BitqueryEntity[]> => {
 const getTokenLogo = (address: string): string => {
   // Note: fs.existsSync can't be used here because its not case sensetive
   if (logoFiles.includes(`${address}.png`)) {
-    return `https://tokens.demonswap.finance/images/${address}.png`;
+    return `https://tokens.demonswap.fi/images/${address}.png`;
   }
 
   return `https://assets.trustwalletapp.com/blockchains/smartchain/assets/${address}/logo.png`;

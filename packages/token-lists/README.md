@@ -1,6 +1,6 @@
-# PancakeSwap Token Lists
+# DemonSwap Token Lists
 
-This repo contains main PancakeSwap token list and tools to validate it.
+This repo contains main DemonSwap token list and tools to validate it.
 
 ## How to add external lists
 
@@ -9,10 +9,10 @@ URLs to external lists are stored in `token-lists.json`, if you want your list t
 ## How to add new lists within this repository
 
 - Add an array of tokens under `src/tokens`
-- Add `checksum:newlistname`, `generate:newlistname`, `makelist:newlistname` command to `package.json` analogous to PancakeSwap default and extended list scripts.
+- Add `checksum:newlistname`, `generate:newlistname`, `makelist:newlistname` command to `package.json` analogous to DemonSwap default and extended list scripts.
 - Modify `checksum.ts`, `buildList.ts`, `ci-check.ts`, and `default.test.ts` to handle new list
 
-## How to add new tokens to PancakeSwap (extended) token list
+## How to add new tokens to DemonSwap (extended) token list
 
 Note - this is not something we expect pull requests for.  
 Unless you've been specifically asked by someone from PCS team please do no submit PRs to be listed on default PCS list. You can still trade your tokens on PCS exchange by pasting your address into the token field.
@@ -35,7 +35,7 @@ For list to be considered valid it need to satisfy the following criteria:
 Note - this is not something we expect pull requests for.
 
 ```shell script
-# Fetch the Top100 Tokens on PancakeSwap v2, and update list.
+# Fetch the Top100 Tokens on DemonSwap v2, and update list.
 $ yarn fetch:pcs-top-100
 
 # Build token list (demonswap-top-100.json)
@@ -46,4 +46,4 @@ $ yarn makelist:pcs-top-100
 
 Token lists will be auto-deployed via netlify when PR is merged to master. Be sure to build the list with `yarn makelist:list-name` before submitting/merging the PR since it doesn't make much sense building lists within Netlify (because most errors are related to wrong token information and should be fixed prior to landing into master)
 
-Netlify simply takes the json files under `lists` directory and hosts them on `tokens.demonswap.finance/list-name.json`
+Netlify simply takes the json files under `lists` directory and hosts them on `tokens.demonswap.fi/list-name.json`

@@ -1,16 +1,16 @@
 {
-  "https://tokens.demonswap.finance/demonswap-default.json": {
-    "name": "PancakeSwap Default",
-    "homepage": "https://demonswap.finance"
+  "https://tokens.demonswap.fi/demonswap-default.json": {
+    "name": "DemonSwap Default",
+    "homepage": "https://demonswap.fi"
   },
-  "https://tokens.demonswap.finance/demonswap-extended.json": {
-    "name": "PancakeSwap Extended",
-    "homepage": "https://demonswap.finance"
+  "https://tokens.demonswap.fi/demonswap-extended.json": {
+    "name": "DemonSwap Extended",
+    "homepage": "https://demonswap.fi"
     
   },
-  "https://tokens.demonswap.finance/demonswap-top-100.json": {
-    "name": "PancakeSwap Top 100",
-    "homepage": "https://demonswap.finance"
+  "https://tokens.demonswap.fi/demonswap-top-100.json": {
+    "name": "DemonSwap Top 100",
+    "homepage": "https://demonswap.fi"
     
   },
   "https://tokens.coingecko.com/binance-smart-chain/all.json": {
