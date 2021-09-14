@@ -1,12 +1,12 @@
 # 🥞 Demon UIkit
 
-[![Version](https://img.shields.io/npm/v/@demonswap-libs/uikit)](https://www.npmjs.com/package/@demonswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@demonswap-libs/uikit)](https://www.npmjs.com/package/@demonswap-libs/uikit)
+[![Version](https://img.shields.io/npm/v/@demonswap/uikit)](https://www.npmjs.com/package/@demonswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@demonswap/uikit)](https://www.npmjs.com/package/@demonswap/uikit)
 
 Demon UIkit is a set of React components and hooks used to build pages on Demon's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @demonswap-libs/uikit`
+`yarn add @demonswap/uikit`
 
 ## Setup
 
@@ -16,7 +16,7 @@ Before using Demon UIkit, you need to provide the theme file to styled-component
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@demonswap-libs/uikit'
+import { light, dark } from '@demonswap/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -26,7 +26,7 @@ import { light, dark } from '@demonswap-libs/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@demonswap-libs/uikit'
+import { ResetCSS } from '@demonswap/uikit'
 ...
 <ResetCSS />
 ```
