@@ -1,4 +1,4 @@
-# 🥞 Demon UIkit
+# 😈 Demon UIkit
 
 [![Version](https://img.shields.io/npm/v/@demonswap/uikit)](https://www.npmjs.com/package/@demonswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@demonswap/uikit)](https://www.npmjs.com/package/@demonswap/uikit)
 
@@ -37,4 +37,4 @@ This project is built with Typescript and export all the relevant types.
 
 ## How to use the UIkit
 
-If you want to use components from the UIkit, check the [Storybook documentation](https://demonswap.github.io/demon-uikit/)
+If you want to use components from the UIkit, check the [Storybook documentation](https://demonswap.github.io/toolkit/)
