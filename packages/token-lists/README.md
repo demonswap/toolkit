@@ -17,7 +17,7 @@ URLs to external lists are stored in `token-lists.json`, if you want your list t
 Note - this is not something we expect pull requests for.  
 Unless you've been specifically asked by someone from PCS team please do no submit PRs to be listed on default PCS list. You can still trade your tokens on PCS exchange by pasting your address into the token field.
 
-- Add new tokens to `src/tokens/pancakeswap-extended.json` file
+- Add new tokens to `src/tokens/demonswap-extended.json` file
 - Run `yarn makelist:pcs-extended`
   - By default new list will have patch version number bumped by 1 (e.g. `2.0.1` -> `2.0.2`).
   - If you want to bump minor version add `minor` after makelist command `yarn makelist:pcs-extended minor`
@@ -38,7 +38,7 @@ Note - this is not something we expect pull requests for.
 # Fetch the Top100 Tokens on PancakeSwap v2, and update list.
 $ yarn fetch:pcs-top-100
 
-# Build token list (pancakeswap-top-100.json)
+# Build token list (demonswap-top-100.json)
 $ yarn makelist:pcs-top-100
 ```
 
@@ -46,4 +46,4 @@ $ yarn makelist:pcs-top-100
 
 Token lists will be auto-deployed via netlify when PR is merged to master. Be sure to build the list with `yarn makelist:list-name` before submitting/merging the PR since it doesn't make much sense building lists within Netlify (because most errors are related to wrong token information and should be fixed prior to landing into master)
 
-Netlify simply takes the json files under `lists` directory and hosts them on `tokens.pancakeswap.finance/list-name.json`
+Netlify simply takes the json files under `lists` directory and hosts them on `tokens.demonswap.finance/list-name.json`

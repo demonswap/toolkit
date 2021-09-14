@@ -1,6 +1,6 @@
-# Pancakeswap Profile SDK
+# Demonswap Profile SDK
 
-This package provides some handy functions to retrieve data for Pancakeswap Profile system.
+This package provides some handy functions to retrieve data for Demonswap Profile system.
 
 ##### Table of Contents
 
@@ -15,16 +15,16 @@ This package provides some handy functions to retrieve data for Pancakeswap Prof
 
 ## Installation
 
-Install `@pancakeswap/profile-sdk` into your project with npm:
+Install `@demonswap/profile-sdk` into your project with npm:
 
 ```bash
-npm install @pancakeswap/profile-sdk --save
+npm install @demonswap/profile-sdk --save
 ```
 
 or yarn:
 
 ```bash
-yarn add @pancakeswap/profile-sdk
+yarn add @demonswap/profile-sdk
 ```
 
 This package requires `ethers`, `graphql` and `graphql-request` to be installed in your project.
@@ -43,7 +43,7 @@ yarn add ethers graphql graphql-request
 First set is to initialize the SDK with the following:
 
 ```js
-import PancakeProfileSdk from "@pancakeswap/profile-sdk";
+import PancakeProfileSdk from "@demonswap/profile-sdk";
 
 const pancakeSdk = new PancakeProfileSdk();
 ```
@@ -54,7 +54,7 @@ You can pass optional arguments to the constructor:
 - `chainId` - what chain ID to use, if not provided defaults to `56`
 
 ```js
-import PancakeProfileSdk from "@pancakeswap/profile-sdk";
+import PancakeProfileSdk from "@demonswap/profile-sdk";
 import { ethers } from "ethers";
 
 const customProvider = new ethers.providers.JsonRpcProvider("https://example.com");
@@ -67,7 +67,7 @@ const pancakeSdk = new PancakeProfileSdk(customProvider, 97);
 Returns username for a given address. If the address does not have a profile or there is an error - returns empty string `""`.
 
 ```js
-import PancakeProfileSdk from "@pancakeswap/profile-sdk";
+import PancakeProfileSdk from "@demonswap/profile-sdk";
 
 const pancakeSdk = new PancakeProfileSdk();
 const username = pancakeSdk.getUsername("0x123456789");
@@ -79,7 +79,7 @@ console.log(username); // "Matatabi"
 Returns team information for the team ID. In case of network error returns null. Note that at the moment `points` will return `0` for all teams (total team points will be calculated soon).
 
 ```js
-import PancakeProfileSdk from "@pancakeswap/profile-sdk";
+import PancakeProfileSdk from "@demonswap/profile-sdk";
 
 const pancakeSdk = new PancakeProfileSdk();
 const team = pancakeSdk.getTeam(1);
@@ -107,10 +107,10 @@ console.log(team);
 
 Returns full profile data for a given address. Under the hood retrieves username and team data using `getUsername` and `getTeam` and combines it with data from the profile contract. If address does not have a profile - returns `{ hasRegistered: false, profile: null }`. At the moment does not retrieve achievements (see [getAchievements](#getAchievements)).
 
-It also sets `profile_${address}` cookie containing username and avatar (now only for pancakeswap.finance domain, maybe configurable in future versions)
+It also sets `profile_${address}` cookie containing username and avatar (now only for demonswap.finance domain, maybe configurable in future versions)
 
 ```js
-import PancakeProfileSdk from "@pancakeswap/profile-sdk";
+import PancakeProfileSdk from "@demonswap/profile-sdk";
 
 const pancakeSdk = new PancakeProfileSdk();
 const profile = pancakeSdk.getProfile("0x123456789");
@@ -166,7 +166,7 @@ console.log(profile);
 Returns array of achievements for a given address. If address has no achievements or no profile at all - returns empty array `[]`.
 
 ```js
-import PancakeProfileSdk from "@pancakeswap/profile-sdk";
+import PancakeProfileSdk from "@demonswap/profile-sdk";
 
 const pancakeSdk = new PancakeProfileSdk();
 
@@ -210,7 +210,7 @@ console.log(achievements);
 This package bundles some images within itself, it exports `achievementBadges` and `teamImages` which are javascript objects with keys matching the image names returned by the API (e.g. `"syrup-storm-md.png"`) and values are Base64 encoded images:
 
 ```JSX
-import { Team, teamImages } from "@pancakeswap/profile-sdk";
+import { Team, teamImages } from "@demonswap/profile-sdk";
 
 const team = pancakeSdk.getTeam(1);
 // ...
@@ -221,7 +221,7 @@ Also `bunnyPlaceholder` image is exported to provide fallback for e.g. unregiste
 
 ## Roadmap
 
-Current version of this SDK is 90% copy of existing from [pancake-frontend](https://github.com/pancakeswap/pancake-frontend) repo. There are several improvements to be made in the future versions of this SDK:
+Current version of this SDK is 90% copy of existing from [pancake-frontend](https://github.com/demonswap/pancake-frontend) repo. There are several improvements to be made in the future versions of this SDK:
 
 - [ ] Better error handling (common bad status codes or broken internet connection)
 - [ ] Allow username & avatar cookie to be configurable or optional

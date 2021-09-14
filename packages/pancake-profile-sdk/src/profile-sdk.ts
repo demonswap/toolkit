@@ -31,7 +31,7 @@ class PancakeProfileSdk {
   /**
    * Fetches user information via REST API
    * Contains user information and leaderboard statistics about latest trading competition.
-   * API repo - https://github.com/pancakeswap/pancake-profile-api
+   * API repo - https://github.com/demonswap/pancake-profile-api
    */
   getUsername = async (address: string): Promise<string> => {
     try {
@@ -92,7 +92,7 @@ class PancakeProfileSdk {
    * Fetches team information from
    * Contains team name, number of users, total number of points for the team and whether the team is joinable.
    * This data is combined with static team data (images, description, etc) that is stored in constant in this repo.
-   * Contract repo - https://github.com/pancakeswap/pancake-contracts/tree/master/projects/profile-nft-gamification
+   * Contract repo - https://github.com/demonswap/pancake-contracts/tree/master/projects/profile-nft-gamification
    */
   getTeam = async (teamId: number): Promise<Team> => {
     try {
@@ -122,7 +122,7 @@ class PancakeProfileSdk {
    * This function combines data from getUsername and getTeam with profile data received getUserProfile method
    * from PancakeProfile contract.
    * NFT's bunnyId is retrieved from PancakeBunnies contract and mapped to static NFT data stored in constant.
-   * Contracts repo - https://github.com/pancakeswap/pancake-contracts/tree/master/projects/profile-nft-gamification
+   * Contracts repo - https://github.com/demonswap/pancake-contracts/tree/master/projects/profile-nft-gamification
    */
   getProfile = async (address: string): Promise<GetProfileResponse> => {
     try {
@@ -142,7 +142,7 @@ class PancakeProfileSdk {
       let nft: Nft;
       if (isActive) {
         nft = await getNftByTokenId(nftAddress, tokenId, this.provider, this.chainId);
-        const avatar = nft ? `https://pancakeswap.finance/images/nfts/${nft.images.sm}` : undefined;
+        const avatar = nft ? `https://demonswap.finance/images/nfts/${nft.images.sm}` : undefined;
         // Save the preview image in a cookie so it can be used on the exchange
         // TODO v2: optional (and configurable) Cookies.set
         Cookies.set(
@@ -151,7 +151,7 @@ class PancakeProfileSdk {
             username,
             avatar,
           },
-          { domain: "pancakeswap.finance", secure: true, expires: 30 }
+          { domain: "demonswap.finance", secure: true, expires: 30 }
         );
       }
 

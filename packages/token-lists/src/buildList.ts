@@ -1,14 +1,14 @@
 import fs from "fs";
 import path from "path";
 import { TokenList } from "@uniswap/token-lists";
-import { version as pancakeswapDefaultVersion } from "../lists/pancakeswap-default.json";
-import { version as pancakeswapExtendedVersion } from "../lists/pancakeswap-extended.json";
-import { version as pancakeswapTop15Version } from "../lists/pancakeswap-top-15.json";
-import { version as pancakeswapTop100Version } from "../lists/pancakeswap-top-100.json";
-import pancakeswapDefault from "./tokens/pancakeswap-default.json";
-import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
-import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
-import pancakeswapTop15 from "./tokens/pancakeswap-top-15.json";
+import { version as demonswapDefaultVersion } from "../lists/demonswap-default.json";
+import { version as demonswapExtendedVersion } from "../lists/demonswap-extended.json";
+import { version as demonswapTop15Version } from "../lists/demonswap-top-15.json";
+import { version as demonswapTop100Version } from "../lists/demonswap-top-100.json";
+import demonswapDefault from "./tokens/demonswap-default.json";
+import demonswapExtended from "./tokens/demonswap-extended.json";
+import demonswapTop100 from "./tokens/demonswap-top-100.json";
+import demonswapTop15 from "./tokens/demonswap-top-15.json";
 
 export enum VersionBump {
   "major" = "major",
@@ -23,41 +23,41 @@ type Version = {
 };
 
 const lists = {
-  "pancakeswap-default": {
-    list: pancakeswapDefault,
+  "demonswap-default": {
+    list: demonswapDefault,
     name: "PancakeSwap Default",
-    keywords: ["pancakeswap", "default"],
+    keywords: ["demonswap", "default"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
     sort: false,
-    currentVersion: pancakeswapDefaultVersion,
+    currentVersion: demonswapDefaultVersion,
   },
-  "pancakeswap-extended": {
-    list: pancakeswapExtended,
+  "demonswap-extended": {
+    list: demonswapExtended,
     name: "PancakeSwap Extended",
-    keywords: ["pancakeswap", "extended"],
+    keywords: ["demonswap", "extended"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
     sort: true,
-    currentVersion: pancakeswapExtendedVersion,
+    currentVersion: demonswapExtendedVersion,
   },
-  "pancakeswap-top-100": {
-    list: pancakeswapTop100,
+  "demonswap-top-100": {
+    list: demonswapTop100,
     name: "PancakeSwap Top 100",
-    keywords: ["pancakeswap", "top 100"],
+    keywords: ["demonswap", "top 100"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
     sort: true,
-    currentVersion: pancakeswapTop100Version,
+    currentVersion: demonswapTop100Version,
   },
-  "pancakeswap-top-15": {
-    list: pancakeswapTop15,
+  "demonswap-top-15": {
+    list: demonswapTop15,
     name: "PancakeSwap Top 15",
-    keywords: ["pancakeswap", "top 15"],
+    keywords: ["demonswap", "top 15"],
     logoURI:
       "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
     sort: true,
-    currentVersion: pancakeswapTop15Version,
+    currentVersion: demonswapTop15Version,
   },
 };
 

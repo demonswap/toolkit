@@ -1459,7 +1459,7 @@ exports[`renders correctly 1`] = `
               >
                 <a
                   class="c11 c12"
-                  href="/https://exchange.pancakeswap.finance"
+                  href="/https://exchange.demonswap.finance"
                 >
                   Exchange
                 </a>
@@ -1469,7 +1469,7 @@ exports[`renders correctly 1`] = `
               >
                 <a
                   class="c11 c12"
-                  href="/https://exchange.pancakeswap.finance/#/pool"
+                  href="/https://exchange.demonswap.finance/#/pool"
                 >
                   Liquidity
                 </a>
@@ -1723,7 +1723,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             class="c22"
-            href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+            href="https://demonswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
             target="_blank"
           >
             <svg
@@ -2058,7 +2058,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             class="c37"
-            href="/https://exchange.pancakeswap.finance"
+            href="/https://exchange.demonswap.finance"
           >
             Exchange
           </a>
@@ -2072,7 +2072,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             class="c37"
-            href="/https://exchange.pancakeswap.finance/#/pool"
+            href="/https://exchange.demonswap.finance/#/pool"
           >
             Liquidity
           </a>
@@ -2194,7 +2194,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/contact-us"
+                    href="https://docs.demonswap.finance/contact-us"
                     target="_black"
                   >
                     Contact
@@ -2206,7 +2206,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://pancakeswap.medium.com/"
+                    href="https://demonswap.medium.com/"
                     target="_black"
                   >
                     Blog
@@ -2218,7 +2218,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/contact-us/telegram"
+                    href="https://docs.demonswap.finance/contact-us/telegram"
                     target="_black"
                   >
                     Community
@@ -2230,7 +2230,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/tokenomics/cake"
+                    href="https://docs.demonswap.finance/tokenomics/cake"
                     target="_black"
                   >
                     CAKE
@@ -2253,7 +2253,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c53 c52"
                     color="#FFB237"
-                    href="https://pancakeswap.creator-spring.com/"
+                    href="https://demonswap.creator-spring.com/"
                     target="_black"
                   >
                     Online Store
@@ -2274,7 +2274,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="Support https://docs.pancakeswap.finance/contact-us/customer-support"
+                    href="Support https://docs.demonswap.finance/contact-us/customer-support"
                     target="_black"
                   >
                     Customer
@@ -2286,7 +2286,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/help/troubleshooting"
+                    href="https://docs.demonswap.finance/help/troubleshooting"
                     target="_black"
                   >
                     Troubleshooting
@@ -2298,7 +2298,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/get-started"
+                    href="https://docs.demonswap.finance/get-started"
                     target="_black"
                   >
                     Guides
@@ -2319,7 +2319,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://github.com/pancakeswap"
+                    href="https://github.com/demonswap"
                     target="_black"
                   >
                     Github
@@ -2331,7 +2331,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance"
+                    href="https://docs.demonswap.finance"
                     target="_black"
                   >
                     Documentation
@@ -2343,7 +2343,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://app.gitbook.com/@pancakeswap-1/s/pancakeswap/code/bug-bounty"
+                    href="https://app.gitbook.com/@demonswap-1/s/demonswap/code/bug-bounty"
                     target="_black"
                   >
                     Bug Bounty
@@ -2355,7 +2355,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited"
+                    href="https://docs.demonswap.finance/help/faq#is-demonswap-safe-has-demonswap-been-audited"
                     target="_black"
                   >
                     Audits
@@ -2367,7 +2367,7 @@ exports[`renders correctly 1`] = `
                   <a
                     class="c51 c52"
                     color="#F4EEFF"
-                    href="https://docs.pancakeswap.finance/hiring/become-a-chef"
+                    href="https://docs.demonswap.finance/hiring/become-a-chef"
                     target="_black"
                   >
                     Careers
@@ -2466,7 +2466,7 @@ exports[`renders correctly 1`] = `
                 aria-label="Twitter"
                 class="c58 c52"
                 color="primary"
-                href="https://twitter.com/pancakeswap"
+                href="https://twitter.com/demonswap"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -2506,7 +2506,7 @@ exports[`renders correctly 1`] = `
                     aria-label="English"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/pancakeswap"
+                    href="https://t.me/demonswap"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2546,7 +2546,7 @@ exports[`renders correctly 1`] = `
                     aria-label="Italiano"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/pancakeswap_ita"
+                    href="https://t.me/demonswap_ita"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2556,7 +2556,7 @@ exports[`renders correctly 1`] = `
                     aria-label="русский"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/pancakeswap_ru"
+                    href="https://t.me/demonswap_ru"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2566,7 +2566,7 @@ exports[`renders correctly 1`] = `
                     aria-label="Türkiye"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/pancakeswapturkiye"
+                    href="https://t.me/demonswapturkiye"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2586,7 +2586,7 @@ exports[`renders correctly 1`] = `
                     aria-label="Español"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/PancakeswapEs"
+                    href="https://t.me/DemonswapEs"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2596,7 +2596,7 @@ exports[`renders correctly 1`] = `
                     aria-label="日本語"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/pancakeswapjp"
+                    href="https://t.me/demonswapjp"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2606,7 +2606,7 @@ exports[`renders correctly 1`] = `
                     aria-label="Français"
                     class="c24 c52"
                     color="textSubtle"
-                    href="https://t.me/pancakeswapfr"
+                    href="https://t.me/demonswapfr"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2638,7 +2638,7 @@ exports[`renders correctly 1`] = `
                 aria-label="Reddit"
                 class="c58 c52"
                 color="primary"
-                href="https://reddit.com/r/pancakeswap"
+                href="https://reddit.com/r/demonswap"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -2665,7 +2665,7 @@ exports[`renders correctly 1`] = `
                 aria-label="Instagram"
                 class="c58 c52"
                 color="primary"
-                href="https://instagram.com/pancakeswap_official"
+                href="https://instagram.com/demonswap_official"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -2689,7 +2689,7 @@ exports[`renders correctly 1`] = `
                 aria-label="Github"
                 class="c62 c52"
                 color="primary"
-                href="https://github.com/pancakeswap/"
+                href="https://github.com/demonswap/"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -3010,7 +3010,7 @@ exports[`renders correctly 1`] = `
                 >
                   <a
                     class="c22"
-                    href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+                    href="https://demonswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
                     target="_blank"
                   >
                     <svg
@@ -3165,7 +3165,7 @@ exports[`renders correctly 1`] = `
                 </div>
                 <a
                   class="c83"
-                  href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+                  href="https://demonswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
                   scale="sm"
                   target="_blank"
                 >
