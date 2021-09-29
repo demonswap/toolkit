@@ -1,16 +1,16 @@
 import React from "react";
-import { CakePrice, CakePriceProps } from ".";
+import { DemonPrice, DemonPriceProps } from ".";
 import { Flex } from "../Box";
 
 export default {
-  title: "Components/CakePrice",
-  component: CakePrice,
+  title: "Components/DemonPrice",
+  component: DemonPrice,
 };
 
-const Template: React.FC<CakePriceProps> = ({ ...args }) => {
+const Template: React.FC<DemonPriceProps> = ({ ...args }) => {
   return (
     <Flex p="10px">
-      <CakePrice {...args} />
+      <DemonPrice {...args} />
     </Flex>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import IconComponent from "../Svg/IconComponent";
-import { Toggle } from "../Toggle";
+import IconComponent from "../../Svg/IconComponent";
+import { Toggle } from "../../Toggle";
 
 export interface Props {
   isDark: boolean;
