@@ -6,6 +6,7 @@ export * from "./components/Breadcrumbs";
 export * from "./components/Button";
 export * from "./components/ButtonMenu";
 export * from "./components/Card";
+export * from "./components/CakePrice";
 export * from "./components/Checkbox";
 export * from "./components/Dropdown";
 export * from "./components/FallingBunnies";
@@ -25,11 +26,14 @@ export * from "./components/Skeleton";
 export * from "./components/Spinner";
 export * from "./components/Stepper";
 export * from "./components/BaseMenu";
+export * from "./components/SubMenuItems";
 export * from "./components/Svg";
 export * from "./components/Table";
+export * from "./components/ThemeSwitcher";
 export * from "./components/TabMenu";
 export * from "./components/Tag";
 export * from "./components/Text";
+export * from "./components/Timeline";
 export * from "./components/Toggle";
 
 // Hooks

@@ -11,7 +11,7 @@ import {
   StyledToolsContainer,
 } from "./styles";
 import { FooterProps } from "./types";
-import ThemeSwitcher from "./Components/ThemeSwitcher";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 import LangSelector from "../LangSelector/LangSelector";
 import DemonPrice from "../DemonPrice/DemonPrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
@@ -49,7 +49,8 @@ const MenuItem: React.FC<FooterProps> = ({
                 <StyledListItem key={label}>
                   <Link
                     href={href}
-                    target="_black"
+                    target="_blank"
+                    rel="noreferrer noopener"
                     color={isHighlighted ? baseColors.warning : darkColors.text}
                     bold={false}
                   >

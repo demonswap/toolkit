@@ -11,6 +11,7 @@ import {
   StyledDropdownMenu,
   LinkStatus,
   StyledDropdownMenuItemContainer,
+  StyledOverlay,
 } from "./styles";
 import { DropdownMenuItemType, DropdownMenuProps } from "./types";
 
@@ -67,12 +68,9 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
         }
       } else if (isTouchingTooltipRef) {
         // Don't close the menu immediately so it catches the event
-        setTimeout(
-          () => {
-            setIsOpen(false);
-          },
-          isBottomNav ? 500 : 100
-        );
+        setTimeout(() => {
+          setIsOpen(false);
+        }, 500);
       } else {
         setIsOpen(false);
       }
@@ -127,6 +125,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
   return (
     <Box ref={isBottomNav ? null : setTargetRef} {...props}>
       <Box ref={isBottomNav ? setTargetRef : null}>{children}</Box>
+      {isBottomNav && isOpen && showItemsOnMobile && <StyledOverlay />}
       {hasItems && (
         <StyledDropdownMenu
           style={styles.popper}

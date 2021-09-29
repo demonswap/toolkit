@@ -6,7 +6,7 @@ import { Box } from "../../components/Box";
 import Flex from "../../components/Box/Flex";
 import Footer from "../../components/Footer";
 import MenuItems from "../../components/MenuItems/MenuItems";
-import SubMenuItems from "../../components/SubMenuItems";
+import { SubMenuItems } from "../../components/SubMenuItems";
 import { useMatchBreakpoints } from "../../hooks";
 import DemonPrice from "../../components/DemonPrice/DemonPrice";
 import Logo from "./components/Logo";
@@ -38,7 +38,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
 `;
 
-const BodyWrapper = styled.div`
+const BodyWrapper = styled(Box)`
   position: relative;
   display: flex;
 `;
@@ -82,7 +82,7 @@ const Menu: React.FC<NavProps> = ({
       }
       // Avoid triggering anything at the bottom because of layout shift
       else if (!isBottomOfPage) {
-        if (currentOffset < refPrevOffset.current) {
+        if (currentOffset < refPrevOffset.current || currentOffset <= MENU_HEIGHT) {
           // Has scroll up
           setShowMenu(true);
         } else {
@@ -130,7 +130,7 @@ const Menu: React.FC<NavProps> = ({
         </Flex>
       </StyledNav>
       {subLinks && <SubMenuItems items={subLinks} mt={`${MENU_HEIGHT + 1}px`} activeItem={activeSubItem} />}
-      <BodyWrapper>
+      <BodyWrapper mt={!subLinks ? `${MENU_HEIGHT + 1}px` : "0"}>
         <Inner isPushed={false} showMenu={showMenu}>
           {children}
           <Footer
