@@ -1,6 +1,6 @@
 {
   "name": "@demonswap/uikit",
-  "version": "0.52.0",
+  "version": "0.54.5",
   "description": "Set of UI components for demon projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
